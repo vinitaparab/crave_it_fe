@@ -1,7 +1,9 @@
-import { Avatar, colors, IconButton } from "@mui/material";
+import { Avatar, Badge, colors, IconButton } from "@mui/material";
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import { deepOrange, orange } from "@mui/material/colors";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import "./Navbar.css"
 
 export const Navbar = () => {
   return (
@@ -20,6 +22,14 @@ export const Navbar = () => {
         </div>
         <div className="">
           <Avatar sx={{bgcolor:"white",colors:deepOrange}}>P</Avatar>
+        </div>
+        <div className="">
+        <IconButton>
+          <Badge color="primary" badgeContent={3}>
+          <ShoppingCartIcon sx={{ fontSize: "1.5rem" }} />
+
+          </Badge>
+          </IconButton>
         </div>
       </div>
     </div>

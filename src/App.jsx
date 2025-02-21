@@ -7,7 +7,8 @@ import { Navbar } from "./component/Navbar";
 import { ThemeProvider } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
 import { darkTheme } from "./Theme/DarkTheme";
-import Body from "./Body";
+import Home from "./component/Home/Home";
+
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <Navbar />
+        <Home/>
       </ThemeProvider>
     </div>
   );
