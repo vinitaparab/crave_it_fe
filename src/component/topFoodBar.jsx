@@ -57,8 +57,9 @@ export const topFeedData = [
     title: "Misal",
   },
   {
-    image:"https://media.istockphoto.com/id/1449429511/photo/green-lacha-chilli-paratha.jpg?s=612x612&w=0&k=20&c=uxo7Xv4mY9ieG6gEU-FDr1V6qzGnbtzgIXmygTLD2yU=",
-    title:"Paratha"
+    image:
+      "https://media.istockphoto.com/id/1449429511/photo/green-lacha-chilli-paratha.jpg?s=612x612&w=0&k=20&c=uxo7Xv4mY9ieG6gEU-FDr1V6qzGnbtzgIXmygTLD2yU=",
+    title: "Paratha",
   },
 
   {
