@@ -20,5 +20,8 @@ export const darkTheme = createTheme({
     textColor: {
       main: "#111111",
     },
+    // buttonColor:{
+
+    // }
   },
 });
