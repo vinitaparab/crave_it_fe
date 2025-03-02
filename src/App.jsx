@@ -23,16 +23,16 @@ function App() {
   const { auth } = useSelector((store) => store);
   useEffect(() => {
     // console.log(auth.jwt || jwt);
-    if (jwt && !auth.jwt) {
+
       dispatch(getUser(auth.jwt || jwt));
-    }
+    // }
   }, [auth.jwt]);
   return (
     <div>
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
-        <Navbar />
-        <Home/>
+        {/* <Navbar /> */}
+        {/* <Home/> */}
         {/* <RestaurantDetails/> */}
         {/* <Cart/> */}
         {/* <Profile/> */}
