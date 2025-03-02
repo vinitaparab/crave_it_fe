@@ -15,7 +15,7 @@ import CarouselItem from "./CarouselItem";
     slidesToShow: 5,
     slidesToScroll: 3,
     autoplay:true,
-    autoplaySpeed:400,
+    autoplaySpeed:2000,
     arrows:false
   };
   return (

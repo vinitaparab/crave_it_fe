@@ -3,7 +3,6 @@ import {
   Button,
   Card,
   Divider,
-  Grid2,
   Modal,
   TextField,
 } from "@mui/material";
@@ -16,7 +15,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import Grid from "@mui/material/Grid2";
 import * as Yup from "yup";
 
-const style = {
+ export const style = {
   position: "absolute",
   top: "50%",
   left: "50%",
@@ -47,8 +46,8 @@ const Cart = () => {
   const handleOpenAddressModal = () => setOpen(true);
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
-  const handleSubmit = (value) => {};
-  //   console.log("form value", value);
+  const handleSubmit = (values) => {};
+    // console.log("form values", value);
   return (
     <>
       <main className="lg:flex justify-between">
@@ -124,12 +123,12 @@ const Cart = () => {
         <Box sx={style}>
           <Formik
             initialValues={initialValues}
-            validationSchema={validationSchema}
+            // validationSchema={validationSchema}
             onSubmit={handleSubmit}
           >
             <Form>
               <Grid container spacing={2}>
-                <Grid item xs={12}>
+                {/* <Grid size={12}>
                   <Field
                     as={TextField}
                     name="streeAddress"
@@ -143,8 +142,23 @@ const Cart = () => {
                     //     </ErrorMessage>
                     //   }
                   />
+                </Grid> */}
+                <Grid size={12}>
+                  <Field
+                    as={TextField}
+                    name="street Address"
+                    label="Street Address"
+                    fullWidth
+                    variant="outlined"
+                    //   error={!ErrorMessage("streetAddress")}
+                    //   helperText={
+                    //     <ErrorMessage>
+                    //       {(msg) => <span classname="text-red-700">{msg}</span>}
+                    //     </ErrorMessage>
+                    //   }
+                  />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid size={12}>
                   <Field
                     as={TextField}
                     name="state"
@@ -159,7 +173,7 @@ const Cart = () => {
                     //   }
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid size={12}>
                   <Field
                     as={TextField}
                     name="city"
@@ -174,7 +188,7 @@ const Cart = () => {
                     //   }
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid size={12}>
                   <Field
                     as={TextField}
                     name="pincode"
@@ -189,7 +203,7 @@ const Cart = () => {
                     //   }
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid size={12}>
                   <Button
                     fullWidth
                     variant="contained"
