@@ -48,7 +48,7 @@ export const topFeedData = [
   },
   {
     image:
-      "https://media.istockphoto.com/id/1305451864/photo/biryani.jpg?s=612x612&w=0&k=20&c=myS23vJLtxpHp3LSRm0NU3rU30s8aLb45UHs8mfY8KA=",
+      "https://media.istockphoto.com/id/1410336311/photo/chicken-biriyani-with-raita-and-pickle-served-in-a-golden-dish-isolated-on-dark-background.jpg?s=2048x2048&w=is&k=20&c=ZbTsrI9wkxxMuHSX54Gnz55DHa6HMQ8t2vbPeDC1GkU=",
     title: "Biryani",
   },
   {
